@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="416.0" prefWidth="717.0" style="-fx-background-color: #17202A;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.MenuPrincipalController">
+    <stylesheets>
+        <URL value="@/styles/menuprincipal.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="416.0" prefWidth="195.0" style="-fx-background-color: #00FF7F;">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="77.0" prefWidth="198.0" style="-fx-background-color: #00FF7F;" text="Menu Principal" textFill="#17202a">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="226.0" style="-fx-background-color: #00FF7F;" text="Gerenciar Jogadores" textFill="#17202a">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../../Downloads/athlete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="226.0" style="-fx-background-color: #00FF7F;" text="Gerenciar Times" textFill="#17202a">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../../Downloads/club.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="226.0" style="-fx-background-color: #00FF7F;" text="Consultar Informaçôes" textFill="#17202a">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../../Downloads/find.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="226.0" style="-fx-background-color: #00FF7F;" text="Sair" textFill="#17202a">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../../Downloads/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="195.0" layoutY="96.0" prefHeight="112.0" prefWidth="538.0" style="-fx-background-color: #FDFEFE;">
+         <children>
+            <Label layoutX="31.0" layoutY="62.0" text="Menu Principal" textFill="#f1c40f">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="33.0" text="/menuPrincipal" textFill="#f1c40f">
+               <font>
+                  <Font name="Franklin Gothic Book" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="232.0" layoutY="285.0" text="Bem-vindo!" textFill="#f1c40f">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

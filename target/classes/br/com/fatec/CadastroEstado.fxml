@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #17202A;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.CadastroEstadoController">
+    <stylesheets>
+        <URL value="@/styles/cadastroestado.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="txtSigla" layoutX="197.0" layoutY="216.0" prefHeight="25.0" prefWidth="91.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d0b4b4" />
+         </effect></TextField>
+      <Label layoutX="38.0" layoutY="210.0" text="Sigla do Estado" textFill="WHITE">
+         <font>
+            <Font name="Myanmar Text Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="268.0" text="Nome do Estado" textFill="WHITE">
+         <font>
+            <Font name="Myanmar Text Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="194.0" layoutY="274.0" prefHeight="25.0" prefWidth="239.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d0b4b4" />
+         </effect></TextField>
+      <ComboBox fx:id="cbEstado" layoutX="196.0" layoutY="335.0" prefWidth="150.0" promptText="Selecione uma das opçôes" style="-fx-background-color: #7FFFD4;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label layoutX="38.0" layoutY="329.0" text="Estados registrados" textFill="WHITE">
+         <font>
+            <Font name="Myanmar Text Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="btnSalvar" layoutX="317.0" layoutY="216.0" mnemonicParsing="false" onAction="#btnSalvar_Click" style="-fx-background-color: #00CED1;" text="Salvar para alterar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnCadastroClube" layoutX="139.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCadastroClube_Click" style="-fx-background-color: #32CD32;" text="Cadastro de Clubes" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Myanmar Text Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnMenu" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnMenu_Click" style="-fx-background-color: #1ABC9C;" text="Menu Principal" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Myanmar Text Bold" size="13.0" />
+         </font></Button>
+      <Pane layoutY="60.0" prefHeight="113.0" prefWidth="694.0" style="-fx-background-color: #F1C40F;">
+         <children>
+            <Label layoutX="43.0" layoutY="27.0" text="Cadastro de Estados" textFill="WHITE">
+               <font>
+                  <Font name="Myanmar Text Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="366.0" layoutY="309.0" prefHeight="77.0" prefWidth="213.0" />
+      <HBox layoutX="201.0" layoutY="397.0" prefHeight="60.0" prefWidth="290.0">
+         <children>
+            <Button fx:id="btnRegistrar" mnemonicParsing="false" onAction="#btnRegistrar_Click" prefHeight="47.0" prefWidth="91.0" style="-fx-background-color: #2ECC71;" text="Registrar" textFill="#fff7f7">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Myanmar Text Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="47.0" prefWidth="91.0" style="-fx-background-color: #FF0000;" text="Excluir" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Myanmar Text Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnAlterar" mnemonicParsing="false" onAction="#btnAlterar_Click" prefHeight="47.0" prefWidth="91.0" style="-fx-background-color: #00CED1;" text="Alterar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

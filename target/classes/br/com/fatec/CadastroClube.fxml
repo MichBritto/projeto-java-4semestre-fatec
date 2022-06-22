@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #17202A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.CadastroClubeController">
+   <children>
+      <Label layoutX="42.0" layoutY="248.0" text="Nome Clube" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="201.0" text="Sigla CLube" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="343.0" text="País de origem" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtSigla" layoutX="179.0" layoutY="197.0" prefHeight="25.0" prefWidth="77.0">
+         <effect>
+            <DropShadow color="#d0b4b4" />
+         </effect>
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtNome" layoutX="179.0" layoutY="244.0">
+         <effect>
+            <DropShadow color="#d0b4b4" />
+         </effect></TextField>
+      <ComboBox fx:id="cbEstado" layoutX="179.0" layoutY="290.0" prefWidth="150.0" promptText="Selecione um estado" />
+      <Button fx:id="btnCadMenu" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCadMenu_Click" prefHeight="42.0" prefWidth="133.0" style="-fx-background-color: #1ABC9C;" text="Menu Principal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Pane layoutY="69.0" prefHeight="113.0" prefWidth="685.0" style="-fx-background-color: #32CD32;">
+         <children>
+            <Label layoutX="43.0" layoutY="27.0" text="Cadastro de Clubes" textFill="WHITE">
+               <font>
+                  <Font name="Myanmar Text Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="38.0" layoutY="293.0" text="Estado" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbPais" layoutX="179.0" layoutY="341.0" prefWidth="150.0" promptText="Selecione um país" />
+      <VBox layoutX="429.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="btnRegistrar" mnemonicParsing="false" onAction="#btnRegistrar_Click" prefHeight="42.0" prefWidth="115.0" style="-fx-background-color: #2ECC71;" text="Registrar Clube" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="7.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="42.0" prefWidth="115.0" style="-fx-background-color: #FF0000;" text="Excluir Clube" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="7.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnAtualizar" mnemonicParsing="false" onAction="#btnAtualizar_Click" prefHeight="42.0" prefWidth="115.0" style="-fx-background-color: #00CED1;" text="Atualizar Clube" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="7.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnMostrar" mnemonicParsing="false" onAction="#btnMostrar_Click" prefHeight="42.0" prefWidth="115.0" style="-fx-background-color: #FF8C00;" text="Mostrar Detalhes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

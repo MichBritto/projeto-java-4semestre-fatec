@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #17202A;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.CadastroJogController">
+    <stylesheets>
+        <URL value="@/styles/cadastrojog.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="txt_nomeJog" layoutX="172.0" layoutY="223.0">
+         <effect>
+            <DropShadow color="#d0b4b4" />
+         </effect></TextField>
+      <TextField fx:id="txt_Pos" layoutX="172.0" layoutY="274.0" prefHeight="31.0" prefWidth="51.0">
+         <effect>
+            <DropShadow color="#d0b4b4" />
+         </effect></TextField>
+      <TextField fx:id="txt_Clube" layoutX="172.0" layoutY="332.0" prefHeight="31.0" prefWidth="51.0">
+         <effect>
+            <DropShadow color="#d0b4b4" />
+         </effect></TextField>
+      <TextField fx:id="txt_Pais" layoutX="173.0" layoutY="393.0" prefHeight="31.0" prefWidth="50.0">
+         <effect>
+            <DropShadow color="#d0b4b4" />
+         </effect></TextField>
+      <Button fx:id="btn_criaJog" layoutX="507.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#btn_criaJog_Click" prefHeight="45.0" prefWidth="98.0" style="-fx-background-color: #2ECC71;" text="Registrar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn_editaJog" layoutX="507.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#btn_editaJog_Click" prefHeight="45.0" prefWidth="98.0" style="-fx-background-color: #00CED1;" text="Alterar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn_excluiJog" layoutX="507.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#btn_excluiJog_Click" prefHeight="45.0" prefWidth="98.0" style="-fx-background-color: #FF0000;" text="Excluir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TextField fx:id="txt_idJog" layoutX="416.0" layoutY="392.0" prefHeight="31.0" prefWidth="51.0">
+         <effect>
+            <DropShadow color="#d0b4b4" />
+         </effect></TextField>
+      <Button fx:id="btnMostrar" layoutX="507.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnMostrar_Click" onMouseClicked="#btn_excluiJog_Click" prefHeight="45.0" prefWidth="98.0" style="-fx-background-color: #FF8C00;" text="Mostrar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutY="80.0" prefHeight="113.0" prefWidth="714.0" style="-fx-background-color: #FF8C00;">
+         <children>
+            <Label layoutX="43.0" layoutY="27.0" text="Cadastro de Jogadores" textFill="WHITE">
+               <font>
+                  <Font name="Myanmar Text Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="47.0" layoutY="224.0" text="Nome Jogador" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="280.0" text="Posição" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="338.0" text="Clube" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="396.0" text="País" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="398.0" text="ID Jogador" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMenu" layoutX="22.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnMenu_Click" prefHeight="42.0" prefWidth="133.0" style="-fx-background-color: #1ABC9C;" text="Menu Principal" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

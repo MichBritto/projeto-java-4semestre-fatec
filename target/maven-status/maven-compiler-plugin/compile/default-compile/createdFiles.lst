@@ -1,0 +1,7 @@
+br\com\fatec\Controller\CadastroEstadoController.class
+br\com\fatec\App.class
+br\com\fatec\Controller\MenuPrincipalController.class
+br\com\fatec\Controller\ConsultaInfoController.class
+br\com\fatec\Controller\CadastroJogController.class
+br\com\fatec\Controller\CadastroClubeController.class
+br\com\fatec\Estado.class

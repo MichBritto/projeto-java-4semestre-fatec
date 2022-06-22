@@ -1,0 +1,4 @@
+br\com\fatec\App.class
+br\com\fatec\Controller\CadastroEstadoController.class
+br\com\fatec\Controller\MenuPrincipalController.class
+br\com\fatec\Estado.class

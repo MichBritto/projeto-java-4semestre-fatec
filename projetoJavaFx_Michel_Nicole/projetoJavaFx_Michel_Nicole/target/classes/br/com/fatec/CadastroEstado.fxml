@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="465.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.CadastroEstadoController">
+    <stylesheets>
+        <URL value="@/styles/cadastroestado.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="txtSigla" layoutX="166.0" layoutY="93.0" />
+      <Label layoutX="57.0" layoutY="97.0" text="Sigla do Estado" />
+      <Label layoutX="57.0" layoutY="160.0" text="Nome do Estado" />
+      <TextField fx:id="txtNome" layoutX="166.0" layoutY="156.0" />
+      <ComboBox fx:id="cbEstado" layoutX="166.0" layoutY="226.0" prefWidth="150.0" promptText="Selecione uma das opçôes" />
+      <Button fx:id="btnRegistrar" layoutX="102.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnRegistrar_Click" text="Registrar" />
+      <Label layoutX="50.0" layoutY="230.0" text="Estados registrados" />
+      <Button fx:id="btnExcluir" layoutX="216.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnExcluir_Click" text="Excluir" />
+      <Button fx:id="btnAlterar" layoutX="310.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnAlterar_Click" text="Alterar" />
+      <Button fx:id="btnSalvar" layoutX="362.0" layoutY="118.0" mnemonicParsing="false" onAction="#btnSalvar_Click" text="Salvar" />
+   </children>
+</AnchorPane>
