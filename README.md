@@ -20,7 +20,7 @@ Tela de cadastro de jogador:
 
 
 Tela de cadastro de clube:
-
+![menu-jogador](https://user-images.githubusercontent.com/81880139/175068055-2c5dc70b-28f9-497e-9894-0f36f02bee6b.png)
 
 
 Tela de consultar informações:
